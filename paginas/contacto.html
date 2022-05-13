@@ -39,24 +39,24 @@
         <form class="form_contacto" action="">
             
             <label id="nombre" for="nombre_text">nombre:</label>
-            <input type="text" id="nombre_text" name="nombre" placeholder="nombre">
+            <input type="text" id="nombre_text" name="nombre" placeholder="nombre" class="bloqueDeTexto">
         
             <label id="apellido" for="apellido_text">apellido</label>
-            <input type="text" id="apellido_text" name="apellido" placeholder="apellido">
+            <input type="text" id="apellido_text" name="apellido" placeholder="apellido" class="bloqueDeTexto">
         
             <label id="email" for="email_text">email</label>
-            <input type="email" id="email_text" name="email" placeholder="email">
+            <input type="email" id="email_text" name="email" placeholder="email" class="bloqueDeTexto">
         
             <label id="motivo" for="motivo_text">motivo</label>
-            <select name="motivo" id="motivo_text">
-                <option value="error">error</option>
-                <option value="dudas">dudas</option>
-                <option value="">otro(aclarar)</option>
+            <select name="motivo" id="motivo_text" class="bloqueDeTexto">
+                <option value="error" class="bloqueDeTexto">error</option>
+                <option value="dudas" class="bloqueDeTexto">dudas</option>
+                <option value="" class="bloqueDeTexto">otro(aclarar)</option>
             </select>
             
-            <textarea name="descripcion" id="descripcion" cols="30" rows="10">descripcion</textarea>
+            <textarea name="descripcion" id="descripcion" cols="30" rows="10" class="bloqueDeTexto bloqueDeTexto">descripcion</textarea>
             
-            <input id="submit" class="form_contacto_div" type="submit">
+            <input id="submit" class="form_contacto_div bloqueDeTexto" type="submit">
         </form>
     </main>
     <footer>
@@ -64,7 +64,7 @@
             <div class="row form_email">
                 <p class="col">ingresa tu email para recibir notificaciones sobre ofertas</p>
                 <input type="email" class="col bloqueDeTexto">
-                <button class="col boton">enviar</button>
+                <button class="col boton bloqueDeTexto">enviar</button>
             </div>
         </form>
         <p>©2022</p>
