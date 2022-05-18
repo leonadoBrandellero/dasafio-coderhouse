@@ -1,331 +1,296 @@
-*{
+header *, main *, footer *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
     display: block;
+    color: rgb(225, 225, 225);
+    font-family: 'Roboto', sans-serif;
 }
 
-title{
-    display: none;
+/* inicio edicion de bootstrap */
+.row{
+    justify-content: center;
+    align-items: center;
+}
+/* fin edicion de bootstrap */
+
+.espacio{
+    display: block;
+    padding: 2rem;
 }
 
-.Titulo{
-    padding-top: 6rem;
-    padding-bottom: 1rem;
-    background-color: rgb(148, 230, 230);
+/* comienzo nav */
+.nav{
+    background-color: #700071;
+    border-bottom: 2px solid #530054;
+}
+
+.nav a{
+    color: antiquewhite;
+    border-radius: 20px;
+}
+
+.nav a:hover{
+    color: aliceblue;
+    background-color: #0081b8;
+}
+
+/* fin nav */
+
+
+/* comienzo header */
+
+h1{
+    font-size: 50px;
+    
 }
 
 h1, h2{
     text-align: center;
-    margin: 0!important;
 }
-
-h1{
-    padding-bottom: 2rem;
+.seccionTitulo{
+    background-color: #162c82;
 }
-
-body{
-    font-family: 'Anybody', cursive !important;
-    background-color: rgb(77, 233, 233)!important;
-}
+/* fin header */
 
 
-.inicio{
-    background-color: rgba(102, 148, 148, 0.8);
-    position: fixed;
-    top: 0;
-    left: 0;
+/* comienzo main */
+/* inicio gradientes */
+.gradienteA-M{
+    margin: 0;
     width: 100%;
-    z-index: 100;
+    height: 8rem;
+    background: rgb(69,20,82);
+    background: linear-gradient(0deg, rgba(112,0,113,1) 28%, rgba(22,44,130,1) 100%);
+}
+
+.gradienteM-A{
+    margin: 0;
+    width: 100%;
+    height: 8rem;
+    background: rgb(22,44,130);
+    background: linear-gradient(0deg, rgba(22,44,130,1) 0%, rgba(112,0,113,1) 100%);
+}
+
+/* fin gradientes */
+
+/* inicio estilos imagenes */
+.imgInicio{
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 10%;
+}
+/* fin estilos imagenes */
+
+/* secciones */
+.secciones{
+    margin: 0;
+    max-width: 100%;
     text-align: center;
+}
+
+/* seccionM = seccion Morado */
+.seccionM{
+    min-height: 400px;
+    background-color: #700071;
+}
+
+/* seccionA = seccion Azul */
+.seccionA{
+    min-height: 400px;
+    background-color: #162c82;
+}
+
+/* inicio productos */
+.productos{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-}
-
-.inicio a{
-    color: white;
-    margin: 10px;
-    text-decoration: none;
-}
-
-.inicio a:hover{
-    color: royalblue;
-}
-
-.inicio .inicio_lista{
-    display: flex;
-    justify-content: space-between;
-}
-
-.hamburger{
-    display: none;
-    width: 10px;
-    margin: 0px!important;
-}
-
-.espacio{
-    padding: 3rem;
-}
-
-.main{
-    position: relative;
-    background-color: rgb(110, 233, 233);
-    padding: 0!important;
-}
-
-.FAQ{
-    width: auto;
-    display: block;
-    margin: 5px;
-    background-color: rgba(240, 248, 255, 0.472);
-}
-
-.preTabla{
-    display: flex;
-    justify-content: center;
-}
-
-.tabla{
-    display: table;
-}
-
-.tabla tr{
-    display: table-row;
-}
-
-.tabla th, .tabla td{
-    background-color:rgb(155, 255, 255);
-    border: 1px solid black;
-    padding: 3px;
-    display: table-cell;
-}
-
-ul{
-    list-style: none;
-    margin: 0!important;
-}
-
-li p{
-    display: flex;
     flex-wrap: wrap;
 }
 
-li span{
-    margin: 8px;
-}
-    
-#parrafo_1 {
-    margin-left: 6%;
-    grid-area: 2 / 1 / 3 / 2; 
-}
-
-.ejemploBackground{
-    display: inline;
-    width: 100%;
-    margin: 0!important;
-}
-
-.ejemplo{
-    background-color: rgb(119, 233, 233);
-    width: 100%!important;
-    
-    align-items: center;
-    justify-content: space-between;
-}
-
-.ejemplo2 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    column-gap: 14px;
-    row-gap: 0px;
-}
-
-.img_2 {
-    justify-items: center!important;
-}
-
-.ejemplo2{
-    background-color: rgb(100, 233, 233);
-}
-
-.imagen{
-    margin: 1rem;
+.productosProducto{
+    width: 310px;
+    height: 470px;
+    background-color: #162c82d6;
     border-radius: 15px;
-    display: block;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.article {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    column-gap: 0px;
-    row-gap: 0px;
+.productoImg{
+    margin: 5% 5%;
+    height: 70%;
+    overflow: hidden;
 }
 
-.producto_nombre { grid-area: 2 / 1 / 3 / 2; }
-.producto_resolucion { grid-area: 2 / 2 / 3 / 3; }
-.producto_precio { grid-area: 2 / 3 / 3 / 4; }
-
-.productos_img{
-    grid-area: 1 / 1 / 2 / 4;
-    padding: 1rem;
-    width: 100%;
-    height: 12rem;
-    border-radius: 2rem;
-    object-fit: cover;
+.productoTexto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.productos{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    justify-content: stretch;
-}
-.producto{
-    background-color: rgba(226, 245, 245, 0.504);
-    border-radius: 20px;
+.productoTitulo{
+    display: inline;
 }
 
-.producto_info{
-    padding: 1rem;
+.productoDescripcion{
+    display: inline;
 }
 
-.producto_precio{
-    color: aliceblue;
-    background-color: rgb(93, 120, 222);
-    padding: 3px;
+.PyC{
+    display: flex;
+
+}
+
+.productoPrecio{
+    border-radius: 6px;
+    font-size: 200%;
+    display: inline;
+    background-color: #700071;
+}
+
+.productoComprar{
+    border-radius: 6px;
+    margin-left: 3px;
+    font-size: 180%;
+    background-color: rgb(76, 76, 0);
+}
+
+.productoComprar:hover{
+    background-color: rgb(150, 150, 99);
+}
+
+/* fin productos */
+
+
+/* FAQ tabla */
+.tabla{
+    margin: 0 5rem;
+    height: 75%;
+}
+
+.tablaCol{
+    display: flex;
+    align-items: center;
+    background-color: #162c82a7;
+    height: 3rem;
+    margin: 2px;
     border-radius: 5px;
 }
 
-.texto{
-    margin: 5px;
-}
-
-.textoTitulo{
-    text-align: center;
-    font-size: 1.4rem;
-}
-
-.textoFAQ{
-    margin: 5px;
-    display: block;
-    background-color: rgba(240, 248, 255, 0.244);
-}
-
-/* pie */
-
+/* formulario contacto */
 .bloqueDeTexto{
-    color: rgb(25, 120, 120);
-    background-color: rgb(255, 255, 255);
-    border-style: solid;
-    border-radius: 15px;
-    border-color: rgb(75, 75, 75);
-    padding: 3px;
-    margin: 1px;
+    margin: 5px;
+    background-color: #162c82;
+    width: 500px;
+    max-width: 500px;
+    height: 3rem;
+    max-height: 3rem;
+    border-style: none;
+    border-radius: 10px;
+    margin: 15px;
 }
 
-.form_contacto{
-    padding: 5px;
+.col label{
+    text-align: end;
 }
 
-.form_contacto_div{
-    margin: 8px;
+/* a */
+a{
+    height: fit-content;
 }
 
-.form_contacto {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    column-gap: 14px;
-    row-gap: 0px;
+.slogan{
+    margin: 0;
+    text-align: center;
+    font-size: 2rem;
 }
 
-#nombre { grid-area: 1 / 1 / 2 / 2; }
-#nombre_text { grid-area: 1 / 2 / 2 / 3; }
-#apellido { grid-area: 2 / 1 / 3 / 2; }
-#apellido_text { grid-area: 2 / 2 / 3 / 3; }
-#email { grid-area: 3 / 1 / 4 / 2; }
-#email_text { grid-area: 3 / 2 / 4 / 3; }
-#motivo { grid-area: 4 / 1 / 5 / 2; }
-#motivo_text { grid-area: 4 / 2 / 5 / 3; }
-#descripcion { grid-area: 1 / 3 / 5 / 5; }
-#submit { grid-area: 2 / 5 / 3 / 6; }
+/* collage */
 
-
-footer{
-    padding-top: 1rem;
-    background-color: rgb(77, 233, 233);
-}
-
-form{
-    display: block;
-    position: relative;
-}
-
-.form_email{
+.preCollage{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
-.form_email p, .form_email input, button{
+.collage{
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+    background-size: 100%;
+    background-image: url(../imagenes/collage.png);
+}
+
+.postCollage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.postCollage a{
+    font-size: 200%;
+    background-color: rgba(128, 128, 128, 0.852);
+}
+
+.postCollage a:hover{
+    display: flex;
+    animation: collage 1s forwards;
+    align-items: center;
+    justify-content: center;
+}
+
+/* animaciones */
+@keyframes collage {
+    0% {
+        color: white;
+        width: 290px;
+        height: 40px;
+    }
+    100% {
+        color: #162c82;
+        width: 400px;
+        height: 400px;
+    }
+}
+
+
+/* footer */
+
+.formFooter{
+    display: flex;
+    justify-content: space-around;
+}
+
+.formFooter div{
+    max-height: 70px;
+}
+
+.footerP{
+    max-height: 60px;
+}
+
+.footerEmail{
+    margin: 4px;
     max-height: 40px;
+    border-radius: 5px;
+    border-style: none;
 }
 
-.links{
-    margin-top: 2rem;
+.footerBoton{
+    margin: 4px;
+    max-height: 40px;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.footerContacto{
+    margin-top: 5rem;
     text-align: center;
-}
-
-
-
-@media screen and (max-width: 769px){
-    .productos{
-        display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    column-gap: 14px;
-    row-gap: 6px;
-    }
-    
-    .producto1 {grid-area: 1 / 1 / 2 / 2; }
-    .producto2 {grid-area: 1 / 2 / 2 / 3; }
-    .producto3 {grid-area: 2 / 1 / 3 / 2; }
-    .producto4 {grid-area: 2 / 2 / 3 / 3; }
-    .producto5 {grid-area: 3 / 1 / 4 / 2; }
-    .producto6 {grid-area: 3 / 2 / 4 / 3; }
-}
-
-@media screen and (max-width: 500px){
-    .inicio_lista_1{
-        display: none;
-    }
-
-    .hamburger{
-        display: flex;
-        width: 2rem;
-        margin: 1px;
-    }
-
-    .form_contacto {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(6, 4rem);
-        column-gap: 6px;
-        row-gap: 6px;
-    }
-        
-    #nombre { grid-area: 1 / 1 / 2 / 2; }
-    #nombre_text { grid-area: 1 / 2 / 2 / 3; }
-    #apellido { grid-area: 2 / 1 / 3 / 2; }
-    #apellido_text { grid-area: 2 / 2 / 3 / 3; }
-    #email { grid-area: 3 / 1 / 4 / 2; }
-    #email_text { grid-area: 3 / 2 / 4 / 3; }
-    #motivo { grid-area: 4 / 1 / 5 / 2; }
-    #motivo_text { grid-area: 4 / 2 / 5 / 3; }
-    #descripcion { grid-area: 5 / 1 / 6 / 2; }
-    #submit { grid-area: 6 / 1 / 7 / 2; }
 }

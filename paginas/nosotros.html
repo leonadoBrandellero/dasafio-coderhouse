@@ -6,95 +6,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros</title>
 
-    <!--Bootstrap-->
+    <!--Styles-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <link rel="stylesheet" href="../estilo/estilo.css">
 
+    <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anybody&display=swap" rel="stylesheet">
-
-    <!--Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav class="inicio">
-            <div class="inicio_logo">
-                <a href="../index.html"><img width="70rem" src="../imagenes/gato_nft.png" alt="logo" class="logo"></a>
-            </div>
-
-            <div>
-                <ul class="inicio_lista">
-                    <li> <a class="inicio_lista_ele" href="../index.html">Inicio</a> </li>
-                    <li> <a class="inicio_lista_ele" href="productos.html">Productos</a> </li>
-                    <li> <a class="inicio_lista_ele" href="faq.html">FAQ</a> </li>
-                    <li> <a class="inicio_lista_ele" href="nosotros.html">Nosotros</a> </li>
-                    <li> <a class="inicio_lista_ele" href="contacto.html">Contacto</a> </li>
-                </ul>
-                <a href="#" class="hamburger"><img class="hamburger" src="../imagenes/hamburger.png" alt="hamburger"></a>
+        <nav class="navbar fixed-top navbar-expand-lg nav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img width="70rem"  src="../imagenes/gato_nft.png" alt="logo" class="logo"></a><!-- cambiar width de img -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><img class="hamburger" src="../imagenes/hamburger.png" alt="hamburger" width="100%"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        <a class="nav-link" href="productos.html">Productos</a>
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </div>
+                </div>
             </div>
         </nav>
-        <h1 class="Titulo">Nosotros</h1>
+        <div class="seccionTitulo">
+            <div class="espacio"></div>
+            <div class="espacio"></div>
+            
+            <h1>Nosotros</h1>
+            <div class="gradienteA-M"></div>
+        </div>
     </header>
-    <main class="main">
-        <div class="espacio"></div>
-        <div class="container">
+    <main>
+        <div class="seccionM">
             <div class="row">
-                <div class="col">
-                    <h2 class="texto">Quienes somos?</h2>
-                </div>
-                <div class="col">
-                    <div class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. In vitae autem error quam! Ut nesciunt ea sit distinctio at. Necessitatibus id nulla exercitationem possimus culpa voluptate a suscipit, quo aliquid?</div>
-                </div>
+                <div class="slogan col">Quienes somos?</div>
+                <div class="col">NFT Cats® es una empresa fantasma creada para robar las mayor cantidad de plata posible en el menor tiempo posible</div>
             </div>
             <div class="espacio"></div>
             <div class="row">
-                <div class="col">
-                    <h2 class="texto">Por qué elegirnos?</h2>
+                <div class="slogan col">Por qué elegirnos?</div>
+                <div class="col">a continuacion, una tabla demostrando por qué elegirnos</div>
+            </div>
+            <div class="tabla">
+                <div class="row">
+                    <div class="col tablaCol"></div>
+                    <div class="col tablaCol">confiable</div>
+                    <div class="col tablaCol">precios buenos</div>
+                    <div class="col tablaCol">legal</div>
+                    <div class="col tablaCol">cantidad NFT</div>
                 </div>
-                <div class="col">
-                    <p class="texto">a continuacion, una tabla demostrando por qué elegirnos</p>
+                <div class="row">
+                    <div class="col tablaCol">nosotros</div>
+                    <div class="col tablaCol">no</div>
+                    <div class="col tablaCol">no</div>
+                    <div class="col tablaCol">posiblemente no</div>
+                    <div class="col tablaCol">pocos(y no son NFTs)</div>
+                </div>
+                <div class="row">
+                    <div class="col tablaCol">otros</div>
+                    <div class="col tablaCol">si</div>
+                    <div class="col tablaCol">si?</div>
+                    <div class="col tablaCol">supongo</div>
+                    <div class="col tablaCol">muchos</div>
                 </div>
             </div>
         </div>
-        <div class="preTabla"> 
-            <table class="tabla">
-                <tr>
-                    <th class="a1"></th>
-                    <th class="a2">confiable</th>
-                    <th class="a3">precios buenos</th>
-                    <th class="a4">legal</th>
-                    <th class="a5">cantidad NFT</th>
-                </tr>
-                <tr>
-                    <td class="b1">nosotros</td>
-                    <td class="b2">no</td>
-                    <td class="b3">no</td>
-                    <td class="b4">posiblemente no</td>
-                    <td class="b5">pocos(y no son NFTs)</td>
-                </tr>
-                <tr>
-                    <td class="c1">otros</td>
-                    <td class="c2">si</td>
-                    <td class="c3">si?</td>
-                    <td class="c4">supongo</td>
-                    <td class="c5">muchos</td>
-                </tr>
-            </table>
-        </div>       
-        <div class="espacio"></div> 
     </main>
     <footer>
-        <div class="links">
-            <div>
-                <a href="contacto.html">contactanos</a>
+        <div class="gradienteM-A"></div>
+        <div class="seccionA">
+            <form class="formFooter" action="">
+                <div class="row ">
+                    <p class="footerP col">ingresa tu email para recibir notificacones sobre ofertas</p>
+                    <input type="email" name="" id="" placeholder="ejemplo@gmail.com" class="footerEmail col">
+                    <input type="submit" value="Enviar" class="footerBoton col">
+                </div>
+            </form>
+            <div class="row">
+                <a href=".//paginas/contacto.html" class="footerContacto col">Contactanos</a>
             </div>
-        </div>  
-        <p>©2022</p>
+        </div>
     </footer>
-
     <!--Javascript-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
