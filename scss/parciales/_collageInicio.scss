@@ -1,0 +1,47 @@
+/* collage */
+
+.preCollage{
+    display: flex;
+    justify-content: center;
+}
+
+.collage{
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+    background-size: 100%;
+    background-image: url(../imagenes/collage.png);
+}
+
+.postCollage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.postCollage a{
+    font-size: 200%;
+    background-color: rgba(128, 128, 128, 0.852);
+}
+
+.postCollage a:hover{
+    display: flex;
+    animation: collage 1s forwards;
+    align-items: center;
+    justify-content: center;
+}
+
+/* animaciones */
+@keyframes collage {
+    0% {
+        color: white;
+        width: 290px;
+        height: 40px;
+    }
+    100% {
+        color: #162c82;
+        width: 400px;
+        height: 400px;
+    }
+}

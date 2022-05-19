@@ -1,0 +1,65 @@
+/* inicio productos */
+.productos{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.productosProducto{
+    width: 310px;
+    height: 470px;
+    background-color: #162c82d6;
+    border-radius: 15px;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.productoImg{
+    margin: 5% 5%;
+    height: 70%;
+    overflow: hidden;
+}
+
+.productoTexto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.productoTitulo{
+    display: inline;
+}
+
+.productoDescripcion{
+    display: inline;
+}
+
+.PyC{
+    display: flex;
+
+}
+
+.productoPrecio{
+    border-radius: 6px;
+    font-size: 200%;
+    display: inline;
+    background-color: #700071;
+}
+
+.productoComprar{
+    border-radius: 6px;
+    margin-left: 3px;
+    font-size: 180%;
+    background-color: rgb(76, 76, 0);
+}
+
+.productoComprar:hover{
+    background-color: rgb(150, 150, 99);
+}
+
+/* fin productos */

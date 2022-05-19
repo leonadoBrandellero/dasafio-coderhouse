@@ -1,0 +1,17 @@
+/* formulario contacto */
+.bloqueDeTexto {
+  margin: 5px;
+  background-color: #162c82;
+  width: 500px;
+  max-width: 500px;
+  height: 3rem;
+  max-height: 3rem;
+  border-style: none;
+  border-radius: 10px;
+  margin: 15px;
+}
+
+.col label {
+  text-align: end;
+}
+/*# sourceMappingURL=contacto.css.map */

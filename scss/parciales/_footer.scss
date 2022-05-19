@@ -1,0 +1,33 @@
+/* footer */
+
+.formFooter{
+    display: flex;
+    justify-content: space-around;
+}
+
+.formFooter div{
+    max-height: 70px;
+}
+
+.footerP{
+    max-height: 60px;
+}
+
+.footerEmail{
+    margin: 4px;
+    max-height: 40px;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.footerBoton{
+    margin: 4px;
+    max-height: 40px;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.footerContacto{
+    margin-top: 5rem;
+    text-align: center;
+}
