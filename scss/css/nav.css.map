@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,kBAAkB;AAClB,AAAA,IAAI,CAAA;EACA,gBAAgB,EAAE,OAAO;EACzB,aAAa,EAAE,iBAAiB;CAOnC;;AATD,AAGI,IAHA,CAGA,CAAC,CAAA;EACG,aAAa,EAAE,IAAI;CAItB;;AARL,AAKQ,IALJ,CAGA,CAAC,AAEI,MAAM,CAAA;EACH,gBAAgB,EAAE,OAAO;CAC5B;;AAQT,aAAa",
-    "sources": [
-        "../parciales/nav.scss"
-    ],
-    "names": [],
-    "file": "nav.css"
-}

@@ -1,16 +1,19 @@
 /* formulario contacto */
 .bloqueDeTexto{
-    margin: 5px;
+    margin: 5px 0 5px 5px;
+    padding: 5px;
     background-color: #162c82;
-    width: 500px;
-    max-width: 500px;
+    max-width: 100%;
     height: 3rem;
     max-height: 3rem;
     border-style: none;
     border-radius: 10px;
-    margin: 15px;
 }
-
-.col label{
-    text-align: end;
+.form_contacto{
+    .col{
+        padding: 0;
+        label{
+            text-align: end;
+        }
+    }
 }
