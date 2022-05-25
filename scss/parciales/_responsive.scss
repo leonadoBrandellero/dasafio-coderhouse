@@ -11,6 +11,11 @@
         display: block;
     }
 
+    .tablaCol{
+        max-width: 33%;
+        max-height: fit-content;
+    }
+
     .formFooter{
         .footerP, .footerBoton, .footerEmail{
             min-width: 80%;

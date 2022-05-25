@@ -300,6 +300,10 @@ a {
   .tablaM {
     display: block;
   }
+  .tablaCol {
+    max-width: 33%;
+    max-height: fit-content;
+  }
   .formFooter {
     display: flex;
     flex-wrap: wrap;
