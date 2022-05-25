@@ -209,6 +209,10 @@ h1, h2 {
   border-radius: 5px;
 }
 
+.tablaM {
+  display: none;
+}
+
 /* formulario contacto */
 .bloqueDeTexto {
   margin: 5px 0 5px 5px;
@@ -289,6 +293,12 @@ a {
 @media screen and (max-width: 800px) {
   .bloqueDeTexto {
     max-width: 70%;
+  }
+  .tablaD {
+    display: none;
+  }
+  .tablaM {
+    display: block;
   }
   .formFooter {
     display: flex;
