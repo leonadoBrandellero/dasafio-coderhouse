@@ -1,0 +1,7 @@
+SAS II:
+    -agregué un map en el footer
+    -agregué un mixin en el archivo collage
+
+SEO:
+    -Titulo y Descripcion agregados a cada página
+    -keywords agregadosa la pagina de inicio y productos

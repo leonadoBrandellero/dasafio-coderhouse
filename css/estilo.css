@@ -62,7 +62,7 @@ h1, h2 {
   margin: 0;
   width: 100%;
   height: 8rem;
-  background: #451452;
+  background: #431251;
   background: linear-gradient(0deg, #700071 28%, #162c82 100%);
 }
 
@@ -84,8 +84,8 @@ h1, h2 {
 .collage {
   display: flex;
   justify-content: center;
-  width: 400px;
   height: 400px;
+  width: 400px;
   background-size: 100%;
   background-image: url(../imagenes/collage.png);
 }
@@ -112,13 +112,13 @@ h1, h2 {
 @keyframes collage {
   0% {
     color: white;
-    width: 290px;
     height: 40px;
+    width: 290px;
   }
   100% {
     color: #162c82;
-    width: 400px;
     height: 400px;
+    width: 400px;
   }
 }
 
@@ -255,6 +255,18 @@ a {
 }
 
 /* footer */
+.mail {
+  color: #c71610;
+}
+
+.whatsapp {
+  color: #28D146;
+}
+
+.instagram {
+  color: #8a3ab9;
+}
+
 .formFooter {
   display: flex;
   justify-content: space-around;
@@ -283,7 +295,7 @@ a {
   color: #162c82;
 }
 
-.footerContacto {
+.footerEnlaces {
   margin-top: 5rem;
   text-align: center;
 }

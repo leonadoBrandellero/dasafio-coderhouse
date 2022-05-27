@@ -1,3 +1,6 @@
+$azul: #162c82;
+$morado: #700071;
+
 /* secciones */
 .secciones{
     margin: 0;
@@ -8,13 +11,13 @@
 /* seccionM = seccion Morado */
 .seccionM{
     min-height: 400px;
-    background-color: #700071;
+    background-color: $morado;
 }
 
 /* seccionA = seccion Azul */
 .seccionA{
     min-height: 400px;
-    background-color: #162c82;
+    background-color: $azul;
 }
 
 /* inicio gradientes */
@@ -22,8 +25,8 @@
     margin: 0;
     width: 100%;
     height: 8rem;
-    background: rgb(69,20,82);
-    background: linear-gradient(0deg, rgba(112,0,113,1) 28%, rgba(22,44,130,1) 100%);
+    background: rgb(67, 18, 81);
+    background: linear-gradient(0deg, $morado 28%, $azul 100%);
 }
 
 .gradienteM-A{
@@ -31,7 +34,7 @@
     width: 100%;
     height: 8rem;
     background: rgb(22,44,130);
-    background: linear-gradient(0deg, rgba(22,44,130,1) 0%, rgba(112,0,113,1) 100%);
+    background: linear-gradient(0deg, $azul 0%, $morado 100%);
 }
 
 /* fin gradientes */

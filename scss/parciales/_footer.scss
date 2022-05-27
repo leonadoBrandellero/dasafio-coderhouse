@@ -1,4 +1,15 @@
 /* footer */
+$contactColor: (
+    mail: #c71610,
+    whatsapp: #28D146,
+    instagram: #8a3ab9
+);
+
+@each $class, $color in $contactColor {
+    .#{$class} {
+        color: $color;
+    }
+ }
 
 .formFooter{
     display: flex;
@@ -25,10 +36,10 @@
     max-height: 40px;
     border-radius: 5px;
     border-style: none;
-    color: #162c82;
+    color: $azul;
 }
 
-.footerContacto{
+.footerEnlaces{
     margin-top: 5rem;
     text-align: center;
 }

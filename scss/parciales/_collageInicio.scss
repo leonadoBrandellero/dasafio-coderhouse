@@ -1,4 +1,8 @@
 /* collage */
+@mixin tamaños($width, $height) {
+    height: $height;
+    width: $width;
+}
 
 .preCollage{
     display: flex;
@@ -8,8 +12,7 @@
 .collage{
     display: flex;
     justify-content: center;
-    width: 400px;
-    height: 400px;
+    @include tamaños(400px, 400px);
     background-size: 100%;
     background-image: url(../imagenes/collage.png);
 }
@@ -36,12 +39,10 @@
 @keyframes collage {
     0% {
         color: white;
-        width: 290px;
-        height: 40px;
+        @include tamaños(290px, 40px)
     }
     100% {
         color: #162c82;
-        width: 400px;
-        height: 400px;
+        @include tamaños(400px, 400px)
     }
 }
