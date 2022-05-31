@@ -1,3 +1,6 @@
+$azul: #162c82;
+$morado: #700071;
+
 /* inicio edicion de bootstrap */
 .row{
     justify-content: center;
@@ -15,6 +18,17 @@
 
 a{
     height: fit-content;
+    width: fit-content;
+    display: block;
+}
+
+.link{
+    background-color: $morado;
+    border-radius: 15px;
+    &:hover{
+        background-color: $azul;
+        color: $morado;
+    }
 }
 
 .slogan{

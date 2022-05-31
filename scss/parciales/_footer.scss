@@ -8,6 +8,7 @@ $contactColor: (
 @each $class, $color in $contactColor {
     .#{$class} {
         color: $color;
+        padding: 0;
     }
  }
 
@@ -40,6 +41,10 @@ $contactColor: (
 }
 
 .footerEnlaces{
+    max-width: 100%;
+}
+
+.footerEnlace{
     margin-top: 5rem;
     text-align: center;
 }
