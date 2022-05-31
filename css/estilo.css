@@ -311,6 +311,7 @@ a {
 }
 
 .footerEnlaces {
+  margin: 0;
   max-width: 100%;
 }
 
