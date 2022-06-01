@@ -8,6 +8,10 @@ header *, main *, footer * {
   font-family: 'Roboto', sans-serif;
 }
 
+footer {
+  background-color: #162c82;
+}
+
 /* comienzo nav */
 .nav {
   max-width: 100%;
