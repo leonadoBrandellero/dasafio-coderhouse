@@ -1,5 +1,9 @@
 @media screen and (max-width: 800px) {
     
+    .productos{
+        justify-content: center;
+    }
+
     .bloqueDeTexto{
         max-width: 70%;
     }
@@ -18,8 +22,8 @@
 
     .formFooter{
         .footerP, .footerBoton, .footerEmail{
-            min-width: 80%;
-            margin: 2% 20% 0 20%;
+            max-width: 80%;
+            margin: 2% 5% 2% 5%;
         }
         display: flex;
         flex-wrap: wrap;

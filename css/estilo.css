@@ -292,6 +292,7 @@ a {
 }
 
 .footerP {
+  margin: 2 px;
   max-height: 60px;
 }
 
@@ -321,6 +322,9 @@ a {
 }
 
 @media screen and (max-width: 800px) {
+  .productos {
+    justify-content: center;
+  }
   .bloqueDeTexto {
     max-width: 70%;
   }
@@ -340,8 +344,8 @@ a {
     flex-direction: column;
   }
   .formFooter .footerP, .formFooter .footerBoton, .formFooter .footerEmail {
-    min-width: 80%;
-    margin: 2% 20% 0 20%;
+    max-width: 80%;
+    margin: 2% 5% 2% 5%;
   }
 }
 /*# sourceMappingURL=estilo.css.map */
