@@ -48,52 +48,54 @@
         <div class="seccionM">
             <div class="seccionForm">
                 <form class="form_contacto" action="">
-                    <div class="row">
-                        <div class="col">
-                            <label id="nombre" for="nombre_text">nombre:</label>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <label id="nombre" for="nombre_text">nombre:</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" id="nombre_text" name="nombre" placeholder="nombre" class="bloqueDeTexto">
+                            </div>
                         </div>
-                        <div class="col">
-                            <input type="text" id="nombre_text" name="nombre" placeholder="nombre" class="bloqueDeTexto">
+                        <div class="row">
+                            <div class="col">
+                                <label id="apellido" for="apellido_text">apellido:</label>
+                            </div>
+                            <div class="col">
+                                <input type="text" id="apellido_text" name="apellido" placeholder="apellido" class="bloqueDeTexto">
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <label id="apellido" for="apellido_text">apellido:</label>
+                        <div class="row">
+                            <div class="col">
+                                <label id="email" for="email_text">email:</label>
+                            </div>
+                            <div class="col">
+                                <input type="email" id="email_text" name="email" placeholder="email" class="bloqueDeTexto">
+                            </div>
                         </div>
-                        <div class="col">
-                            <input type="text" id="apellido_text" name="apellido" placeholder="apellido" class="bloqueDeTexto">
+                        <div class="row">
+                            <div class="col">
+                                <label id="motivo" for="motivo_text">motivo:</label>
+                            </div>
+                            <div class="col">
+                                <select name="motivo" id="motivo_text" class="bloqueDeTexto">
+                                <option value="error" class="bloqueDeTexto">error</option>
+                                <option value="dudas" class="bloqueDeTexto">dudas</option>
+                                <option value="" class="bloqueDeTexto">otro(aclarar)</option>
+                            </select>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <label id="email" for="email_text">email:</label>
+                        <div class="row">
+                            <div class="col"></div>
+                            <div class="col">
+                                <textarea name="descripcion" id="descripcion" cols="30" rows="10" class="bloqueDeTexto">descripcion</textarea>
+                            </div>
                         </div>
-                        <div class="col">
-                            <input type="email" id="email_text" name="email" placeholder="email" class="bloqueDeTexto">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <label id="motivo" for="motivo_text">motivo:</label>
-                        </div>
-                        <div class="col">
-                            <select name="motivo" id="motivo_text" class="bloqueDeTexto">
-                            <option value="error" class="bloqueDeTexto">error</option>
-                            <option value="dudas" class="bloqueDeTexto">dudas</option>
-                            <option value="" class="bloqueDeTexto">otro(aclarar)</option>
-                        </select>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col"></div>
-                        <div class="col">
-                            <textarea name="descripcion" id="descripcion" cols="30" rows="10" class="bloqueDeTexto">descripcion</textarea>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col"></div>
-                        <div class="col">
-                            <input id="submit" class="form_contacto_div bloqueDeTexto" type="submit">
+                        <div class="row">
+                            <div class="col"></div>
+                            <div class="col">
+                                <input id="submit" class="form_contacto_div bloqueDeTexto" type="submit">
+                            </div>
                         </div>
                     </div>
                 </form>
