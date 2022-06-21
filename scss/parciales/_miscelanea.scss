@@ -9,7 +9,8 @@ $morado: #b43eb6;
     align-items: center;
 }
 .accordion-button, .accordion-body{
-    color: black;
+    background-color: $azul;
+    color: $morado;
 }
 
 /* fin edicion de bootstrap */

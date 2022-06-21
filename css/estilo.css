@@ -291,7 +291,8 @@ h1, h2 {
 }
 
 .accordion-button, .accordion-body {
-  color: black;
+  background-color: #2ebfc2;
+  color: #b43eb6;
 }
 
 /* fin edicion de bootstrap */
