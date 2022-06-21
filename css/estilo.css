@@ -290,6 +290,10 @@ h1, h2 {
   align-items: center;
 }
 
+.accordion-button, .accordion-body {
+  color: black;
+}
+
 /* fin edicion de bootstrap */
 .espacio {
   display: block;
