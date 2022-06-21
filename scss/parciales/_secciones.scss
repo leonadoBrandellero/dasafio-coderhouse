@@ -1,5 +1,5 @@
-$azul: #162c82;
-$morado: #700071;
+$azul: #2ebfc2;
+$morado: #b43eb6;
 
 /* secciones */
 .secciones{
@@ -25,7 +25,7 @@ $morado: #700071;
     margin: 0;
     width: 100%;
     height: 8rem;
-    background: rgb(67, 18, 81);
+    background: $morado;
     background: linear-gradient(0deg, $morado 28%, $azul 100%);
 }
 
@@ -33,7 +33,7 @@ $morado: #700071;
     margin: 0;
     width: 100%;
     height: 8rem;
-    background: rgb(22,44,130);
+    background: $azul;
     background: linear-gradient(0deg, $azul 0%, $morado 100%);
 }
 

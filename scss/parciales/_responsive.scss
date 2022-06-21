@@ -1,11 +1,12 @@
 @media screen and (max-width: 800px) {
     
+    .bloqueSlogan{
+        display: flex;
+        flex-direction: column;
+    }
+    
     .productos{
         justify-content: center;
-    }
-
-    .bloqueDeTexto{
-        max-width: 70%;
     }
 
     .tablaD{

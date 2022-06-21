@@ -1,4 +1,7 @@
 /* inicio productos */
+$azul: #2ebfc2;
+$morado: #b43eb6;
+
 .productos{
     display: flex;
     justify-content: space-between;
@@ -8,7 +11,7 @@
 .productosProducto{
     width: 310px;
     height: 470px;
-    background-color: #162c82d6;
+    background-color: $azul;
     border-radius: 15px;
     margin: 15px;
     display: flex;
@@ -17,49 +20,73 @@
     flex-wrap: wrap;
 }
 
+.imagen{
+    position: relative;
+}
+
 .productoImg{
-    margin: 5% 5%;
     height: 70%;
     overflow: hidden;
 }
 
-.productoTexto{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.precio{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 20%;
+    height: 10%;
+    text-align: center;
+    background-color: $azul;
+    color: #4d0f8a;
+    .fa-ethereum{
+        color: #4d0f8a;
+    }
 }
 
-.productoTitulo{
-    display: inline;
+.productoInfo{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    
 }
 
 .productoDescripcion{
     display: inline;
 }
 
-.PyC{
+.productoSecComprar{
     display: flex;
-
-}
-
-.productoPrecio{
-    border-radius: 6px;
-    font-size: 200%;
-    display: inline;
-    background-color: #700071;
 }
 
 .productoComprar{
+    padding: 7px;
+    border: 2px $azul solid;
     border-radius: 6px;
-    margin-left: 3px;
-    font-size: 180%;
-    background-color: rgb(76, 76, 0);
+    margin: 3px;
+    background-color: $morado;
+    &:hover{
+        color: aliceblue;
+        animation: comprar 2s infinite;
+    }
 }
 
-.productoComprar:hover{
-    background-color: rgb(150, 150, 99);
+/* animaciones productos */
+@keyframes comprar {
+    0% {
+        background-color: $morado;
+        border: 2px $azul solid;
+    }
+    50% {
+        background-color: $azul;
+        border: 2px $morado solid;
+    }
+    100% {
+        background-color: $morado;
+        border: 2px $azul solid;
+    }
 }
+
 
 /* fin productos */

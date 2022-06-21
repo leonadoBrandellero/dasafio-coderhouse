@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2a3b9cb11f.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -48,30 +49,48 @@
         <div class="seccionM">
             <div class="tabla container">
                 <div class="row">
-                    <div class="col tablaCol">Pregunta</div>
-                    <div class="col tablaCol">Respuesta</div>
-                </div>
-                <div class="row">
-                    <div class="col tablaCol">Somos confiables?</div>
-                    <div class="col tablaCol">Nop</div>
-                </div>
-                <div class="row">
-                    <div class="col tablaCol">Los precios son buenos?</div>
-                    <div class="col tablaCol">Nop</div>
-                </div>
-                <div class="row">
-                    <div class="col tablaCol">Voy a ser estafado al comprar acá?</div>
-                    <div class="col tablaCol">si :)</div>
-                </div>
-                <div class="row">
-                    <div class="col tablaCol">Es esto legal?</div>
-                    <div class="col tablaCol">Nosotros creemos que no, pero como no somos abogados mejor no opinamos!</div>
-                </div>
-                <div class="row">
-                    <div class="col"><h3>Te quedó alguna duda?</h3></div>
-                </div>
-                <div class="row">
-                    <div class="col"><a href="contacto.html">Contactanos!</a></div>
+                    <div class="accordion accordion-flush" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button tablaCol" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Somos confiables?</button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body tablaCol">Nop</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed tablaCol" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Los precios son buenos?</button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body tablaCol">Nop</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed tablaCol" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Voy a ser estafado al comprar acá?</button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body tablaCol">si :)</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed tablaCol" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Es esto legal?</button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                <div class="accordion-body tablaCol">Nosotros creemos que no, pero como no somos abogados mejor no opinamos!</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingive">
+                                <button class="accordion-button collapsed tablaCol" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Que es un NFT?</button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                <div class="accordion-body tablaCol">Un NFT es un activo digital encriptado, un tipo especial de token criptográfico que representa algo único.</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -85,9 +104,9 @@
                     <input type="submit" value="Enviar" class="footerBoton col">
             </form>
             <div class="row footerEnlaces">
-                <a href="paginas/contacto.html" class="footerEnlace mail col">Contactanos(mail)</a>
-                <a href="#" class="footerEnlace whatsapp col">Whatsapp</a>
-                <a href="#" class="footerEnlace instagram col">Instagram</a>
+                <a href="paginas/contacto.html" class="col-4 footerEnlace"><i class="fa-solid fa-envelope mail"></i></a>
+                <a href="#" class="col-4 footerEnlace"><i class="fa-brands fa-whatsapp whatsapp"></i></a>
+                <a href="#" class="col-4 footerEnlace"><i class="fa-brands fa-instagram instagram"></i></a>
             </div>
         </div>
     </footer>

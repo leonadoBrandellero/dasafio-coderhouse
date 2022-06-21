@@ -1,5 +1,5 @@
-$azul: #162c82;
-$morado: #700071;
+$azul: #2ebfc2;
+$morado: #b43eb6;
 
 
 
@@ -25,15 +25,17 @@ a{
 }
 
 .link{
+    color: $azul;
     background-color: $morado;
     border-radius: 15px;
     &:hover{
-        background-color: $azul;
+        background-color: #39e8eb;
         color: $morado;
     }
 }
 
 .slogan{
+    min-width: 300px;
     margin: 0;
     text-align: center;
     font-size: 2rem;
